@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>01_Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="funciones.js"></script>
+    </head>
+    <body>
+        <section class="barra-izquierda">
+            <img class="logo-alura" src="Imagenes/Vector.png" alt="logo-alura.jpg">
+            <form class="formulario">
+                <textarea required rows="15" id="mensaje" placeholder="Escribe aqui tu mensaje"></textarea>
+                <div class="advertencia">
+                    <img class="imagenAdv" src="Imagenes/VectorAdv.png" alt="VectorAdv.png">
+                    <legend>Solo letras minúsculas y sin acentos</legend>    
+                </div>
+                <button onclick="encriptar()" class="boton-encriptar">Encriptar</button>
+                <button class="boton-desencriptar">Desencriptar</button>
+            </form>
+        </section>
+        <section class="barra-derecha">
+            <div class="contenedor">
+                <img class="muneco"  src="Imagenes/Muñeco.png" alt="imagen-muñeco.jpg">
+                <div class="leyenda">
+                    <p class="aviso">Ningún mensaje fue enviado</p>
+                    <p class="resultado">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <button class="copiar"></button>
+            </div>        
+        </section>
+    </body>
+</html>
