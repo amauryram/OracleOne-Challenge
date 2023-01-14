@@ -107,9 +107,13 @@ body{
     margin: 10px auto;
 }
 
-.copiar{
+/*.Copiar{
     text-decoration: none;
     border-style: none;
+}*/
+
+#btnCopiar{
+    display:none;
 }
 
 
@@ -131,9 +135,15 @@ body{
     .muneco{
         display:none !important;
     }
+    
+    
 
     .leyenda{
         margin: 10px auto;
+    }
+
+    #btnCopiar{
+        margin: auto auto 10px;
     }
 }
 
@@ -177,6 +187,7 @@ body{
     .resultado{
         padding: 15px;
     }
+    
 
 
 }

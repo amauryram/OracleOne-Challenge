@@ -16,18 +16,20 @@
                     <img class="imagenAdv" src="Imagenes/VectorAdv.png" alt="VectorAdv.png">
                     <legend>Solo letras minúsculas y sin acentos</legend>    
                 </div>
-                <button onclick="encriptar()" class="boton-encriptar">Encriptar</button>
-                <button onclick="desencriptar()" class="boton-desencriptar">Desencriptar</button>
+                <input type="button" value="Encriptar" onclick="encriptar()" class="boton-encriptar">
+                <input type="button" value="Desencriptar" onclick="desencriptar()" class="boton-desencriptar">
             </form>
         </section>
         <section class="barra-derecha">
             <div class="contenedor">
                 <img class="muneco"  src="Imagenes/Muñeco.png" alt="imagen-muñeco.jpg">
                 <div class="leyenda">
-                    <p class="aviso">Ningún mensaje fue enviado</p>
-                    <p class="resultado">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <p id="avisoid" class="aviso">Ningún mensaje fue enviado</p>
+                    <p id="muestraMensaje" class="resultado">Ingresa el texto que desees encriptar o desencriptar</p>
                 </div>
-                <button class="copiar"></button>
+                <form action="formulario">
+                    <input type="button" class="Copiar" onclick="copiarPortapapeles();" id="btnCopiar" value="Copiar">
+                </form>
             </div>        
         </section>
     </body>
