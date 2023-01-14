@@ -1,8 +1,12 @@
+
+// copiarPortapapeles() : función encargada de copiar el contenido del textarea 
+//      'muestraMensaje' en el portapapeles. 
+//
+
 function copiarPortapapeles(){
     //console.log("Entrando a copiar");
     var copiar = document.getElementById('muestraMensaje').innerHTML;
 
-    //var content = document.getElementById('textArea').innerHTML;
     navigator.clipboard.writeText(copiar)
         .then(() => {
         console.log("Texto copiado exitosamente...")
@@ -12,6 +16,11 @@ function copiarPortapapeles(){
     })
  
 }
+
+// desencriptar: mediante un ciclo while se itera por el mensaje encriptado.
+//     Como cada palabra encriptada comienza con su respectiva vocal, solo
+//     se saltan los caracteres siguientes a la vocal. al final se agregan
+//     al html con innerHTML.  
 
 function desencriptar(){
     const mapa = new Map();
@@ -46,6 +55,12 @@ function desencriptar(){
         
     } 
 }
+
+
+// encriptar(): función de encriptar, lee la entrada del textarea y lo desco
+//     mpone en un arreglo con 'split', caracter por caracter es revisado que 
+//     pertenezca al ascii de las minusculas y el espacio. Al encontrar una 
+//     vocal, mediante el mapa de tipo map, obtiene el valor a encriptar.
 
 function encriptar(){
     const mapa = new Map();
