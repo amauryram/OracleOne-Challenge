@@ -10,6 +10,7 @@ function copiarPortapapeles(){
     navigator.clipboard.writeText(copiar)
         .then(() => {
         console.log("Texto copiado exitosamente...")
+        alert("Texto copiado exitosamente")
     })
         .catch(err => {
         console.log('Hubo un error al copiar', err);
@@ -50,7 +51,7 @@ function desencriptar(){
             }
         }
         console.log(cadenaResultado);
-        avisoid.innerHTML = "El mensaje Desencriptadoe es:";
+        avisoid.innerHTML = "El mensaje Desencriptado es:";
         mensajefinal.innerHTML = cadenaResultado;
         
     } 
